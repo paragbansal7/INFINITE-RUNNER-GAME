@@ -154,9 +154,6 @@ function draw() {
 
   } else if (gameState === END) {
 
-    gameOver.x = camera.position.x;
-    restart.x = camera.position.x ;
-
     gameOver.visible = true;
     restart.visible = true;
     //change the trex animation
