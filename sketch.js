@@ -57,7 +57,7 @@ function setup() {
   gameOver = createSprite(camera.position.x, height / 2 - 100);
   gameOver.addImage(gameOverImg);
 
-  restart = createSprite(camera.position.x-width/2.2, height / 2);
+  restart = createSprite(camera.position.x, height / 2);
   restart.addImage(restartImg);
 
   gameOver.scale = 0.5;
@@ -159,6 +159,9 @@ function draw() {
     
     gameOver.visible = true;
     restart.visible = true;
+    
+    if(gameOver.visible===true && restart.visible===true){
+    text("OP",camera.position.x,height/2}
     //change the trex animation
     trex.changeAnimation("collided", trex_collided);
 
