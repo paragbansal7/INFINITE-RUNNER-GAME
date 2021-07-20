@@ -180,8 +180,8 @@ function draw() {
 
     }
 
-    if (lifeline === 0 && mousePressedOver(restart))
-      lifeline = 3;
+    if (lifeline === 0 && mousePressedOver(restart)){
+      lifeline = 3;}
   }
 
 
