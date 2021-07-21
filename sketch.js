@@ -53,6 +53,7 @@ function setup() {
 
   ground = createSprite(width/2, height / 2 + 155, camera.position.x, 20);
   ground.addImage("ground", groundImage);
+  ground.x = ground.width/2;
 
   gameOver = createSprite(camera.position.x, height / 2 - 100);
   gameOver.addImage(gameOverImg);
@@ -114,6 +115,10 @@ function draw() {
 
     if (score > 0 && score % 100 === 0) {
       checkPointSound.play()
+    }
+    
+    if(ground.x>0){
+      ground.x = ground.width/2
     }
 
     //jump when the space key is pressed
